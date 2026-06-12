@@ -1,0 +1,93 @@
+name: Encord FinOps
+description: >
+  FinOps Framework 1.0 FOCUS-aligned cost and usage profile for Encord's
+  computer vision data labeling and model evaluation platform. Encord uses
+  a tiered SaaS pricing model with a free Starter plan, a quote-based Team
+  plan, and custom Enterprise agreements. Cost drivers include the number of
+  seats, annotation volume, storage consumption, automated labeling agent
+  usage, and active learning / model evaluation compute.
+specificationVersion: "1.0"
+url: https://encord.com/pricing/
+
+provider:
+  name: Encord
+  website: https://encord.com/
+  pricingPage: https://encord.com/pricing/
+  billingModel: SaaS subscription with usage-based components
+  currency: USD
+
+costDimensions:
+  - dimension: Platform Subscription
+    description: >
+      Base subscription fee per seat or per team, covering access to the
+      Encord Annotate and Encord Active modules. Starter tier is free.
+      Team and Enterprise pricing is quote-based.
+    unit: seat / month
+    tiers:
+      - tier: Starter
+        price: 0
+        unit: free
+      - tier: Team
+        price: null
+        unit: quote-based per seat
+      - tier: Enterprise
+        price: null
+        unit: custom contract
+
+  - dimension: Annotation Volume
+    description: >
+      Cost may scale with the number of annotation tasks, labeled assets,
+      or hours of annotator usage depending on the contract structure.
+      High-volume annotation pipelines should account for this as a
+      primary cost driver.
+    unit: labeled asset or annotation hour
+    notes: Pricing negotiated per contract; contact Encord sales.
+
+  - dimension: Storage
+    description: >
+      Encord manages metadata and label storage. Large-scale datasets with
+      many storage items (images, video frames, DICOM files, point clouds)
+      may incur additional storage costs. Cloud data registered via customer-
+      owned AWS S3, Azure Blob, or GCP buckets does not add Encord storage
+      costs but may affect cloud provider bills.
+    unit: GB / month
+    notes: >
+      Storage costs for customer data remain with the customer's cloud
+      provider. Encord stores labels and metadata internally.
+
+  - dimension: Automated Labeling Agents
+    description: >
+      Encord supports automated labeling via pre-built and custom agents.
+      Enterprise and Team plans may include agent execution costs as part
+      of the subscription or charged per inference run depending on the
+      agreement.
+    unit: agent run
+    notes: Included or metered depending on plan tier.
+
+  - dimension: Model Evaluation Compute (Encord Active)
+    description: >
+      Encord Active computes embeddings, quality metrics, and similarity
+      indexes for datasets. Compute costs for large datasets with many
+      assets may be a factor in Enterprise agreements.
+    unit: compute hours or dataset size
+    notes: Included in Team and Enterprise plans; quotas may apply.
+
+finOpsGuidance:
+  - recommendation: >
+      Start with the free Starter plan to evaluate Encord's capabilities
+      before committing to a Team or Enterprise contract.
+  - recommendation: >
+      For cost predictability, negotiate a fixed-seat Enterprise agreement
+      rather than usage-based billing if annotation volume is high and
+      consistent.
+  - recommendation: >
+      Register data using customer-owned cloud storage (S3, Azure, GCP)
+      to avoid vendor lock-in and control storage costs independently of
+      the Encord subscription.
+  - recommendation: >
+      Monitor automated labeling agent usage; agents can accelerate
+      throughput but may increase metered costs if not capped by contract.
+  - recommendation: >
+      Use the Python SDK's bulk operations (get_storage_items,
+      find_storage_items) to minimize API call overhead and associated
+      compute costs when processing large datasets.

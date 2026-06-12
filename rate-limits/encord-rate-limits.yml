@@ -1,0 +1,61 @@
+name: Encord Rate Limits
+description: >
+  Encord's REST API and Python SDK do not publish specific numeric rate limits
+  in their public documentation. The API uses SSH private key or service
+  account authentication. Encord operates separate API endpoints for UK
+  and US regions. Rate limit details for higher-volume or enterprise usage
+  are negotiated as part of Enterprise agreements. The information below
+  reflects what is publicly documented as of June 2026.
+specificationVersion: "0.1"
+url: https://docs.encord.com/
+
+limits:
+  - scope: REST API (UK region)
+    endpoint: https://api.encord.com/public
+    limitType: request
+    description: >
+      Default rate limits for the Encord REST API (UK endpoint). Specific
+      numeric limits are not publicly disclosed. Enterprise customers may
+      request higher throughput via their account agreement.
+    limit: not-publicly-disclosed
+    period: per-minute
+    notes: Contact Encord support for confirmed rate limit figures.
+
+  - scope: REST API (US region)
+    endpoint: https://api.us.encord.com/public
+    limitType: request
+    description: >
+      US-region API endpoint for customers who registered accounts on the
+      US deployment. Requires explicit domain parameter in SDK authentication
+      calls: domain="https://api.us.encord.com". Same rate limit policy as
+      UK endpoint; specifics not publicly documented.
+    limit: not-publicly-disclosed
+    period: per-minute
+    notes: >
+      US customers must pass domain="https://api.us.encord.com" to
+      EncordUserClient.create_with_ssh_private_key() and all authentication
+      calls.
+
+  - scope: Python SDK
+    endpoint: https://pypi.org/project/encord/
+    limitType: concurrency
+    description: >
+      The Python SDK (encord package) wraps the REST API and is subject to
+      the same underlying rate limits. Bulk operations such as
+      get_storage_items() and find_storage_items() include pagination
+      parameters to manage large result sets without exceeding request limits.
+    limit: not-publicly-disclosed
+    period: per-minute
+
+authentication:
+  - method: SSH private key
+    description: >
+      Primary authentication method. Users generate an SSH key pair, register
+      the public key on the Encord platform, and use the private key path
+      with EncordUserClient.create_with_ssh_private_key(). Private keys
+      must not be password-protected.
+  - method: Service account credentials
+    description: >
+      Service account authentication is supported for automated and
+      programmatic access scenarios. Credentials are managed via the
+      Encord platform under Access Keys settings.

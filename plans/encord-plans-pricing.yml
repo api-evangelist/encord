@@ -1,0 +1,69 @@
+name: Encord Plans and Pricing
+description: >
+  Encord offers tiered pricing plans for teams building computer vision and AI
+  data pipelines. Plans range from a free starter tier for individual
+  experimentation to enterprise agreements with custom pricing and dedicated
+  support. Specific per-seat or per-annotation pricing is quote-based for
+  Team and Enterprise tiers.
+specificationVersion: "0.1"
+url: https://encord.com/pricing/
+
+plans:
+  - name: Starter
+    description: >
+      Free entry-level plan for individual users or small teams evaluating
+      Encord's annotation and data management capabilities. Includes access
+      to core annotation tools, basic project management, and limited storage.
+    price: 0
+    currency: USD
+    period: month
+    features:
+      - Access to Encord Annotate platform
+      - Basic annotation tools (bounding box, polygon, keypoint, segmentation)
+      - Limited projects and datasets
+      - Python SDK access
+      - Community support
+      - UK or US region selection
+
+  - name: Team
+    description: >
+      Paid plan for growing AI teams requiring collaboration, automation, and
+      integrations. Includes advanced workflow management, automated labeling
+      agents, cloud storage integrations, and priority support. Pricing is
+      quote-based and typically charged per seat or per annotated asset.
+    price: null
+    currency: USD
+    period: month
+    priceNote: Contact Encord for pricing — quote-based per team size and usage
+    features:
+      - All Starter features
+      - Multi-user collaboration and role management
+      - Automated labeling agents
+      - Cloud storage integrations (AWS S3, Azure Blob, GCP)
+      - CVAT import support
+      - Workflow automation and templates
+      - Encord Active for model evaluation and data curation
+      - Priority support
+      - SLA guarantees
+
+  - name: Enterprise
+    description: >
+      Custom enterprise agreements for large organizations with multiple AI
+      projects, high annotation volumes, and compliance requirements. Includes
+      dedicated infrastructure options, SSO, audit logs, custom SLAs, and a
+      dedicated customer success manager.
+    price: null
+    currency: USD
+    period: month
+    priceNote: Custom pricing — contact Encord sales
+    features:
+      - All Team features
+      - Single Sign-On (SSO)
+      - Audit logs and compliance controls
+      - Dedicated infrastructure / private deployment options
+      - Custom SLA and uptime guarantees
+      - Dedicated customer success manager
+      - Advanced security and access controls
+      - DICOM and medical imaging support
+      - On-premise or VPC deployment options
+      - Volume discounts on annotation hours
