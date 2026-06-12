@@ -103,6 +103,10 @@ common:
     url: https://raw.githubusercontent.com/api-evangelist/encord/refs/heads/main/rate-limits/encord-rate-limits.yml
   - type: FinOps
     url: https://raw.githubusercontent.com/api-evangelist/encord/refs/heads/main/finops/encord-finops.yml
+  - type: BlogCatalog
+    url: https://raw.githubusercontent.com/api-evangelist/encord/refs/heads/main/blogs/blogs.json
+  - type: JSONLDContext
+    url: https://raw.githubusercontent.com/api-evangelist/encord/refs/heads/main/json-ld/encord-context.jsonld
 
 maintainers:
   - FN: Kin Lane

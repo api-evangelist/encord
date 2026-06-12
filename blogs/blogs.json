@@ -1,0 +1,9 @@
+{
+  "name": "Encord Blog",
+  "description": "Blog covering computer vision, data labeling, model evaluation, and AI workflows from the Encord team.",
+  "url": "https://encord.com/blog/",
+  "rssUrl": null,
+  "rssConfirmed": false,
+  "lastChecked": "2026-06-12",
+  "notes": "No RSS/Atom feed URL discovered; blog is rendered as a JavaScript SPA with no detectable feed endpoint."
+}

@@ -1,0 +1,60 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "encord": "https://encord.com/vocabulary#",
+    "aid": "https://apis.io/vocabulary#aid",
+    "humanURL": "https://apis.io/vocabulary#humanURL",
+    "baseURL": "https://apis.io/vocabulary#baseURL"
+  },
+  "@type": "Organization",
+  "@id": "https://encord.com/",
+  "name": "Encord",
+  "description": "Computer vision data labeling and model evaluation platform providing tools and APIs for managing datasets, annotation tasks, labels, and quality workflows at scale.",
+  "url": "https://encord.com/",
+  "sameAs": [
+    "https://github.com/encord-team",
+    "https://www.linkedin.com/company/encord-team",
+    "https://x.com/encord_team"
+  ],
+  "offers": [
+    {
+      "@type": "Service",
+      "name": "Encord Annotate API",
+      "description": "REST API and Python SDK for programmatically managing annotation projects, datasets, ontologies, labels, and workflows within the Encord Annotate platform.",
+      "url": "https://docs.encord.com/",
+      "encord:baseURL": "https://api.encord.com/public",
+      "encord:sdkLanguage": "Python",
+      "encord:sdkPackage": "https://pypi.org/project/encord/"
+    },
+    {
+      "@type": "Service",
+      "name": "Encord Active API",
+      "description": "API for model evaluation, data curation, and active learning with embedding-based similarity search and quality metrics including mAP, mAR, F1.",
+      "url": "https://encord.com/active/",
+      "encord:baseURL": "https://api.encord.com/public",
+      "encord:documentation": "https://docs.encord.com/sdk-documentation/api-active/sdk-active-collections"
+    }
+  ],
+  "applicationCategory": [
+    "Computer Vision",
+    "Data Labeling",
+    "Annotation",
+    "Machine Learning",
+    "Model Evaluation",
+    "Dataset Management",
+    "Artificial Intelligence",
+    "Image Annotation",
+    "Video Annotation",
+    "DICOM",
+    "Active Learning",
+    "Quality Assurance"
+  ],
+  "encord:authMethod": "SSH private key or service account credentials",
+  "encord:dataTypes": ["images", "video", "audio", "DICOM", "point clouds", "text"],
+  "encord:regions": ["US", "UK"],
+  "statusPage": "https://status.encord.com/",
+  "priceSpecification": {
+    "@type": "PriceSpecification",
+    "url": "https://encord.com/pricing/"
+  }
+}
