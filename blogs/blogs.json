@@ -5,5 +5,24 @@
   "rssUrl": null,
   "rssConfirmed": false,
   "lastChecked": "2026-06-12",
-  "notes": "No RSS/Atom feed URL discovered; blog is rendered as a JavaScript SPA with no detectable feed endpoint."
+  "notes": "No RSS/Atom feed URL discovered; blog is rendered as a JavaScript SPA with no detectable feed endpoint.",
+  "repo": "encord",
+  "feeds": [
+    {
+      "source": "https://x.com/encord_team",
+      "feed_url": "https://x.com/encord_team",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    },
+    {
+      "source": "https://raw.githubusercontent.com/api-evangelist/encord/refs/heads/main/finops/encord-finops.yml",
+      "feed_url": "https://raw.githubusercontent.com/api-evangelist/encord/refs/heads/main/finops/encord-finops.yml",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    }
+  ],
+  "post_count": 0,
+  "fetched": "2026-06-14T20:42:17Z"
 }
