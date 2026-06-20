@@ -1,7 +1,7 @@
 aid: encord
 name: Encord
 type: Index
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 url: https://raw.githubusercontent.com/api-evangelist/encord/refs/heads/main/apis.yml
 created: 2026-06-12
 modified: 2026-06-12
@@ -40,7 +40,7 @@ apis:
       importing and exporting labels, managing automated labeling agents,
       integrating cloud storage (AWS, Azure, GCP), and orchestrating
       annotation workflows.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://docs.encord.com/
     baseURL: https://api.encord.com/public
     tags:
@@ -65,7 +65,7 @@ apis:
       search, and surfacing the most valuable data for labeling. Supports
       performance metrics including mAP, mAR, F1, True/False Positive and
       Negative counts across classes and IoU thresholds.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://encord.com/active/
     baseURL: https://api.encord.com/public
     tags:
