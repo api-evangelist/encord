@@ -1,28 +1,15 @@
 {
-  "name": "Encord Blog",
-  "description": "Blog covering computer vision, data labeling, model evaluation, and AI workflows from the Encord team.",
-  "url": "https://encord.com/blog/",
-  "rssUrl": null,
-  "rssConfirmed": false,
-  "lastChecked": "2026-06-12",
-  "notes": "No RSS/Atom feed URL discovered; blog is rendered as a JavaScript SPA with no detectable feed endpoint.",
   "repo": "encord",
   "feeds": [
     {
-      "source": "https://x.com/encord_team",
-      "feed_url": "https://x.com/encord_team",
-      "title": "",
+      "source": "https://encord.com/blog/",
+      "feed_url": "",
       "saved": 0,
-      "method": "none"
-    },
-    {
-      "source": "https://raw.githubusercontent.com/api-evangelist/encord/refs/heads/main/finops/encord-finops.yml",
-      "feed_url": "https://raw.githubusercontent.com/api-evangelist/encord/refs/heads/main/finops/encord-finops.yml",
-      "title": "",
-      "saved": 0,
-      "method": "none"
+      "method": "agent-scrape",
+      "error": "listing page content truncated; no dated posts extractable"
     }
   ],
+  "fetched": "2026-06-27T12:40:02Z",
   "post_count": 0,
-  "fetched": "2026-06-14T20:42:17Z"
+  "agent_pulled": "2026-06-27"
 }
