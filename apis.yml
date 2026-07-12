@@ -81,6 +81,10 @@ apis:
         url: https://github.com/encord-team/encord-active
 
 common:
+  - type: TrustCenter
+    url: security/encord-trust-center.yml
+  - type: DomainSecurity
+    url: security/encord-domain-security.yml
   - type: Website
     url: https://encord.com/
   - type: Documentation
