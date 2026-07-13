@@ -2,14 +2,21 @@
   "repo": "encord",
   "feeds": [
     {
-      "source": "https://encord.com/blog/",
-      "feed_url": "",
+      "source": "https://x.com/encord_team",
+      "feed_url": "https://x.com/encord_team",
+      "title": "",
       "saved": 0,
-      "method": "agent-scrape",
-      "error": "listing page content truncated; no dated posts extractable"
+      "method": "none"
+    },
+    {
+      "source": "https://raw.githubusercontent.com/api-evangelist/encord/refs/heads/main/finops/encord-finops.yml",
+      "feed_url": "https://raw.githubusercontent.com/api-evangelist/encord/refs/heads/main/finops/encord-finops.yml",
+      "title": "",
+      "saved": 0,
+      "method": "none"
     }
   ],
-  "fetched": "2026-06-27T12:40:02Z",
+  "fetched": "2026-07-11T11:50:51Z",
   "post_count": 0,
   "agent_pulled": "2026-06-27"
 }
