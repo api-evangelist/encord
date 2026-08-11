@@ -93,6 +93,13 @@ apis:
         url: https://github.com/encord-team/encord-active
 
 common:
+  - type: IssueTracker
+    url: https://github.com/encord-team/encord-client-python/issues
+  - type: Releases
+    url: https://github.com/encord-team/encord-client-python/releases
+  - type: License
+    name: Apache-2.0
+    url: https://github.com/encord-team/encord-client-python/blob/master/LICENSE
   - type: TrustCenter
     url: security/encord-trust-center.yml
   - type: DomainSecurity
