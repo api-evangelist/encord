@@ -17,7 +17,7 @@ image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/encord.png
 url: https://raw.githubusercontent.com/api-evangelist/encord/refs/heads/main/apis.yml
 created: 2026-06-12
 modified: 2026-06-12
-specificationVersion: "0.19"
+specificationVersion: '0.23'
 description: >
   Encord is a computer vision data labeling and model evaluation platform that
   provides tools and APIs for managing datasets, annotation tasks, labels, and
