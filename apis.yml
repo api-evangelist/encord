@@ -30,6 +30,19 @@ description: >
   autonomous systems, and other industries to accelerate model development by
   streamlining data curation, annotation, and evaluation pipelines.
 tags:
+  - Computer-Vision
+  - Data Labeling
+  - Annotation
+  - Machine-Learning
+  - Model Evaluation
+  - Dataset Management
+  - Artificial Intelligence
+  - Image Annotation
+  - Video Annotation
+  - DICOM
+  - Active Learning
+  - Quality Assurance
+tags_raw:
   - Computer Vision
   - Data Labeling
   - Annotation
@@ -56,6 +69,12 @@ apis:
     humanURL: https://docs.encord.com/
     baseURL: https://api.encord.com/public
     tags:
+      - Annotation
+      - Project
+      - Datasets
+      - Labels
+      - Workflows
+    tags_raw:
       - Annotation
       - Projects
       - Datasets
