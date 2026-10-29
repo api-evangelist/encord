@@ -1,4 +1,4 @@
-# Encord (encord)
+# Encord
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,74 +64,122 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Encord is a computer vision data labeling and model evaluation platform that provides tools and APIs for managing datasets, annotation tasks, labels, and quality workflows at scale. The platform supports multimodal data including images, video, audio, DICOM, point clouds, and text. Encord exposes a REST API and a Python SDK for programmatically managing projects, datasets, ontologies, storage, and automated labeling workflows. Encord is trusted by AI teams in healthcare, autonomous systems, and other industries to accelerate model development by streamlining data curation, annotation, and evaluation pipelines.
+Encord is a computer vision data labeling and model evaluation platform that provides tools and APIs for managing datasets, annotation tasks, labels, and quality workflows at scale. The platform supports multimodal data including images, video, audio, DICOM, point clouds, and text. Encord exposes a REST API and a Python SDK (encord) for programmatically managing projects, datasets, ontologies, storage, and automated labeling workflows. Authentication is handled via SSH private key or service account credentials, with separate US and UK API endpoints available. Encord is used by AI teams in healthcare, autonomous systems, and other industries to accelerate model development by streamlining data curation, annotation, and evaluation pipelines.
 
-APIs.json: https://raw.githubusercontent.com/api-evangelist/encord/refs/heads/main/apis.yml
+**Areas:** Computer Vision · Data Labeling · Annotation · Machine Learning · Model Evaluation · Dataset Management · Artificial Intelligence · Image Annotation · Video Annotation · DICOM · Active Learning · Quality Assurance
 
-Naftiko: https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=encord-api-evangelist&utm_content=repo
+## Encord on APIs.io
 
-## Tags
+Everything profiled for Encord is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/encord/](https://apis.io/providers/encord/)** — or go straight to one of the APIs or properties below.
 
-- Computer Vision
-- Data Labeling
-- Annotation
-- Machine Learning
-- Model Evaluation
-- Dataset Management
-- Artificial Intelligence
-- Image Annotation
-- Video Annotation
-- DICOM
-- Active Learning
-- Quality Assurance
+### APIs (2)
 
-## APIs
+- [Encord Annotate API](https://apis.io/apis/encord/encord-annotate-api/) — REST API and Python SDK for programmatically managing annotation projects, datasets, ontologies, labels, and workflows within the Encord Annotate platform.…
+- [Encord Active API](https://apis.io/apis/encord/encord-active-api/) — API for the Encord Active module, which provides model evaluation, data curation, and active learning capabilities. Allows importing model predictions,…
 
-### Encord Annotate API
+### Published properties
 
-REST API and Python SDK for programmatically managing annotation projects, datasets, ontologies, labels, and workflows within the Encord Annotate platform. Supports creating and retrieving projects and datasets, importing and exporting labels, managing automated labeling agents, integrating cloud storage, and orchestrating annotation workflows.
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-- Documentation: https://docs.encord.com/
-- Base URL: https://api.encord.com/public
-- Python SDK: https://pypi.org/project/encord/
-- GitHub Client: https://github.com/encord-team/encord-client-python
+#### MCP servers (1)
 
-### Encord Active API
+Model Context Protocol servers that expose the API to agents.
 
-API for the Encord Active module providing model evaluation, data curation, and active learning capabilities. Allows importing model predictions, computing quality metrics (mAP, mAR, F1), running embedding-based similarity search, and surfacing the most valuable data for labeling.
+- [encord](https://apis.io/servers/encord/encord/)
 
-- Documentation: https://docs.encord.com/sdk-documentation/api-active/sdk-active-collections
-- Product Page: https://encord.com/active/
-- GitHub: https://github.com/encord-team/encord-active
+#### JSON-LD (1)
 
-## Plans, Rate Limits, and FinOps
+Linked-data contexts for the provider's vocabulary.
 
-| Resource | File |
+- [Encord Context](https://apis.io/jsonld/encord/encord-context/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Encord Domain Security](https://apis.io/security/encord/encord-domain-security/)
+- [Encord Trust Center](https://apis.io/security/encord/encord-trust-center/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Encord Plans Pricing](https://apis.io/plans/encord/encord-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Encord Rate Limits](https://apis.io/rate-limits/encord/encord-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Encord Finops](https://apis.io/finops/encord/encord-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://encord.com/)
+- [Documentation](https://docs.encord.com/)
+- [Pricing](https://encord.com/pricing/)
+- [Blog](https://encord.com/blog/)
+- [GitHub](https://github.com/encord-team)
+- [Status](https://status.encord.com/)
+
+## API Evangelist rating
+
+**Kin Score 21.9** — emerging · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
 |---|---|
-| Plans and Pricing | [plans/encord-plans-pricing.yml](plans/encord-plans-pricing.yml) |
-| Rate Limits | [rate-limits/encord-rate-limits.yml](rate-limits/encord-rate-limits.yml) |
-| FinOps | [finops/encord-finops.yml](finops/encord-finops.yml) |
+| Discoverability | 68.3 |
+| Contract quality | 6.7 |
+| Contract governance | 0.0 |
+| Operational transparency | 42.1 |
+| Developer ergonomics | 11.9 |
+| Access clarity | 26.3 |
 
-Encord offers three tiers: a free Starter plan, a quote-based Team plan, and custom Enterprise agreements. Rate limits are not publicly disclosed; Enterprise customers negotiate throughput as part of their contract. Authentication uses SSH private key or service account credentials, with separate UK (api.encord.com) and US (api.us.encord.com) region endpoints.
+**Agent readiness 14.7** — agent-aware
 
-## Timestamps
-
-- Created: 2026-06-12
-- Modified: 2026-06-12
-
-## Common Properties
-
-| Property | URL |
+| Agent-readiness dimension | Result |
 |---|---|
-| Website | https://encord.com/ |
-| Documentation | https://docs.encord.com/ |
-| GitHub Organization | https://github.com/encord-team |
-| LinkedIn | https://www.linkedin.com/company/encord-team |
-| X (Twitter) | https://x.com/encord_team |
-| Blog | https://encord.com/blog/ |
-| Pricing | https://encord.com/pricing/ |
-| Status Page | https://status.encord.com/ |
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | verified |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | verified |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
 
-## Maintainers
+**Regulatory alignment 14.5** — Horizontal (data, software, accessibility, platform)
 
-- Kin Lane / kin@apievangelist.com
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/encord/](https://apis.io/providers/encord/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Encord: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/encord/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
